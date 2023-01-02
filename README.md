@@ -8,7 +8,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Design
 
-- Desktop: [here](https://github.com/mgrochalski/qr-code-component/blob/master/design/)
+- Desktop: [here](https://github.com/mgrochalski/product-preview-card/blob/master/design/)
 
 ### Links
 
