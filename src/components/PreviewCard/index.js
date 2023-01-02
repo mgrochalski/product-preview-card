@@ -1,4 +1,4 @@
-import './previewCard.css'
+import './PreviewCard.scss';
 
 const PreviewCard = () => (
     <div>
