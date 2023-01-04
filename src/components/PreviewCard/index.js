@@ -1,18 +1,16 @@
 import styles from './PreviewCard.module.scss';
-import productImg from '../../images/image-product-desktop.jpg';
-import shoppingCardImg from '../../images/icon-cart.svg'
+import shoppingCardImg from '../../images/icon-cart.svg';
 
-const PreviewCard = () => (
+const PreviewCard = ({data: {image, category, title, description, currentPrice, oldPrice}}) => (
     <div className={styles.card}>
-        <img className={styles.img} src={productImg} alt="product"/>
+        <img className={styles.img} src={image} alt={category} />
         <div className={styles.informationBox}>
-            <p className={styles.category}>Perfume</p>
-            <p className={styles.title}>Gabrielle Essence Eau De Parfum</p>
-            <p className={styles.description}>A floral, solar and voluptuous interpretation composed by Olivier Polge,
-                Perfumer-Creator for the House of CHANEL. </p>
+            <p className={styles.category}>{category}</p>
+            <p className={styles.title}>{title}</p>
+            <p className={styles.description}>{description}</p>
             <div className={styles.price}>
-                <p className={styles.price__regular}>$149.99</p>
-                <p className={styles.price__discount}>$169.99</p>
+                <p className={styles.price__regular}>{currentPrice}</p>
+                { oldPrice && <p className={styles.price__discount}>{oldPrice}</p> }
             </div>
             <button className={styles.btn}><img className={styles.btn__img} src={shoppingCardImg} alt='cart img'/><p>Add to Cart</p></button>
         </div>
