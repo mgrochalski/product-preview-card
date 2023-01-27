@@ -1,0 +1,107 @@
+@import '../../variables.scss';
+
+.card {
+  width: 600px;
+  height: 450px;
+  margin: 175px auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+}
+
+.img {
+  border-radius: 10px 0 0 10px;
+}
+
+.informationBox {
+  background-color: $white;
+  border-radius: 0 10px 10px 0;
+  text-align: left;
+  padding: 32px;
+}
+
+.category {
+  font-size: 12px;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  line-height: 15px;
+  letter-spacing: 5px;
+  color: $darkGrayishBlue;
+  margin: 0;
+}
+
+.title {
+  margin: 20px 0;
+  font-family: $font-primary;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: $veryDarkBlue;
+}
+
+.description {
+  margin: 24px 0 0 0;
+  font-family: $font-secondary;
+  color: $darkGrayishBlue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 29px;
+}
+
+.price__regular {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: $darkCyan;
+  margin: 0;
+}
+
+.price__discount {
+  margin: 0 0 0 19px;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  text-decoration-line: line-through;
+  color: $darkGrayishBlue;
+}
+
+.btn {
+  width: 236px;
+  height: 48px;
+  margin: 30px 0;
+  background-color: $darkCyan;
+  border: 0;
+  color: $white;
+  border-radius: 10px;
+
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: $deepDarkCyan;
+}
+
+.btn__img {
+  margin-right: 12px;
+}
